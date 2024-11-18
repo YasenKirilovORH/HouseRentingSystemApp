@@ -20,7 +20,7 @@ namespace HouseRentingSystem.Tests.IntegrationsTests
             // Act: invoke the service method
             var result = this.statisticsController.GetStatistics();
 
-            // Assert the returned result counts are correct
+            // Assert that the returned result counts are correct
             Assert.NotNull(result);
             Assert.That(result.TotalHouses, Is.EqualTo(10));
             Assert.That(result.TotalRents, Is.EqualTo(6));
